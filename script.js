@@ -21,6 +21,11 @@ clearBtn.addEventListener('click', clear);
 equalsBtn.addEventListener('click', () => {
     answer = operate(operator, parseInt(num1), parseInt(num2));
     expField.textContent = answer;
+    num1 = 0;
+    num2 = 0;
+    answer = 0;
+    operator = '';
+    btnOrder = [];
 });
 
 for (i = 0; i < digitBtn.length; i++) {
